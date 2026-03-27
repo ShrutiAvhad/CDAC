@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Address Copy</title>
+
+    <style>
+        body{
+            justify-content: center;
+            display: flex;
+            padding: 100px;
+            background-color: black;
+        }
+
+        .container{
+            border:2px solid black;
+            border-radius: 10px;
+            padding: 30px;
+            background-color: rgb(228, 176, 247);
+            box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+        }
+
+        textarea{
+            border-color: black;
+            border-radius: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-shadow: 0px 2px 2px rgb(75, 5, 98) ;
+        }
+
+        h3{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-shadow: 0px 2px 2px rgb(75, 5, 98);
+
+        }
+
+        button{
+            padding: 3px;
+            border-color: black;
+            border-radius: 10px;
+            background-color: rgb(172, 60, 232);
+            color: white;
+            box-shadow: 0px 1px 1px black;
+        }
+         
+        button:hover{
+            box-shadow:0px 3px 3px  black;
+        }
+    </style>
+
+</head>
+
+    
+<body>
+<div class="container">
+<h3>Temporary Address</h3>
+<textarea id="temp" rows="5" cols="30"></textarea>
+
+<br><br>
+
+<button onclick="copyAddress()">Same As</button>
+
+<br><br>
+
+<h3>Permanent Address</h3>
+<textarea id="perm" rows="5" cols="30"></textarea>
+</div>
+
+<script>
+function copyAddress() {
+    let tempAddress = document.getElementById("temp").value;
+    document.getElementById("perm").value = tempAddress;
+}
+</script>
+
+</body>
+</html>

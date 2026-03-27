@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg Color</title>
+	
+	<style>
+	
+		body{
+			justify-content:center;
+			display:flex;
+			align-items:center;
+			heigth: 100vh
+			margin: 0;
+		}
+		
+		h3{
+			justify-content: center;
+			text-align: center;
+			border: 2px solid black;
+			border-radius:50%;
+			width: 100px;
+			height: 100px;
+			margin:auto;
+			margin-top:100px;
+		}
+		
+		button{
+			background-color: Black;
+			border: 4px solid black;
+			Color: white;
+			margin: 2px;
+			margin-top: 20px;
+			margin-left: 6px;
+		}
+		
+		button:hover{
+			background-color:white;
+			color: black;
+		}
+		
+		
+	</style>
+	
+</head>
+<body>	
+	<div class="button">
+	<h3 id="color"></h3>
+	<button type="button" onclick="change()">Red</button>
+	<button type="button" onclick="change1()">Green</button>
+	<button type="button" onclick="change2()">Blue</button>
+	<button type="button" onclick="change3()">Black</button>
+	<button type="button" onclick="change4()">Yellow</button>
+	</div>
+	
+	<script>
+		function change(){
+			document.getElementById("color").style.backgroundColor="red";
+		}
+		
+		function change1(){
+			document.getElementById("color").style.backgroundColor="green";
+		}
+		
+		function change2(){
+			document.getElementById("color").style.backgroundColor="blue";
+		}
+		
+		function change3(){
+			document.getElementById("color").style.backgroundColor="black";
+		}
+		
+		function change4(){
+			document.getElementById("color").style.backgroundColor="yellow";
+		}
+	
+	</script>
+</body>
+</html>

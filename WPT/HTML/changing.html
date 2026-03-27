@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+	
+	<style>
+	
+		body{
+			justify-content: center;
+			display: flex;
+			padding : 100px;
+			background-color:#ffffcc;
+			
+		}
+		
+		img{
+			width: 300px;
+			height: 300px;
+			border-radius:10px ;
+			margin-top: 120px;
+		}
+		
+		img:hover{
+			opacity:0.8;
+			border: 2px solid black;
+		}
+		
+		button{
+			
+			border-radius:5px ;
+			background-color: black;
+			color:white;
+			padding: 5px;
+			font-size: 18px;
+		}
+		
+		button:hover{
+			border:5px black solid;
+		}
+		
+	</style>
+	
+</head>
+<body>
+	<div class="container">
+		<img id="d1" src="..\Assets\shree.jpg" alt="Shree"><br><br>
+		<button type="button" onclick="changeImage()">Shiv</button>
+		<button type="button" onclick="changeImage1()">Love</button>
+		<button type="button" onclick="changeImage2()">Krishna</button>
+		<button type="button" onclick="changeImage3()">Girl</button>
+		<button type="button" onclick="changeImage4()">Shree</button>
+	</div>
+    <script>
+      function changeImage(){
+       document.getElementById("d1").src="..\Assets\shiv.jpg";
+      }
+	  
+	  function changeImage1(){
+       document.getElementById("d1").src="..\Assets\love.jpeg";
+      }
+	  
+	  function changeImage2(){
+       document.getElementById("d1").src="..\Assets\krishna.jpeg";
+      }
+	  
+	  function changeImage3(){
+       document.getElementById("d1").src="..\Assets\Girl.jfif";
+      }
+	  
+	  function changeImage4(){
+       document.getElementById("d1").src="F:\shree.jpg";
+      }
+    </script>
+</body>
+</html>

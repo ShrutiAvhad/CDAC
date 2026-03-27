@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+	
+	<style>
+		body {
+			
+            background-color:white;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+		
+		h1{
+			text-align: center;
+		}
+		
+		.container{
+			color: black;
+			border: 3px black solid;
+			border-radius: 30px;
+			padding: 60px;
+			padding-top: 30px;
+			margin: 60px;
+			background-color: Orange;
+			
+		}
+		
+		input{
+			border-radius:5px;
+		}
+		
+		button{
+			border: 4px light yellow solid ;
+			margin-top: 10px;
+			border-radius: 5px;
+			background-color: yellow;
+		}
+		
+		button:hover{
+			opacity: 0.9;
+			border: 2px solid white;
+		}
+		
+		#result{
+			border: 2px solid yellow;
+			padding: 5px;
+		}
+		
+	</style>
+
+<body>
+	
+    <form class="container">
+	<h1>Calculator</h1>
+        <label>Enter First Number:</label> <br>
+        <input type="text" name="num1" id="num1"> <br>
+        <label>Enter Second Number:</label> <br>
+        <input type="text" name="num2" id="num2"> <br>
+		
+        <button type="button" onclick="addition()">Add</button>
+        <button type="button" onclick="substraction()">Sub</button>
+        <button type="button" onclick="multiplication()">Mul</button>
+        <button type="button" onclick="division()">Div</button>
+		
+		<p id="result">Result: </p>
+		
+    </form>
+
+    <script>
+        function addition() {
+            let no1 = parseInt(document.getElementById("num1").value);
+            let no2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML="Result: "+ (no1+no2);
+        }
+		
+		function substraction() {
+            let no1 = parseInt(document.getElementById("num1").value);
+            let no2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML="Result: "+ (no1-no2);
+        }
+		
+		function multiplication() {
+            let no1 = parseInt(document.getElementById("num1").value);
+            let no2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML="Result: "+ (no1*no2);
+        }
+		
+		function division() {
+            let no1 = parseInt(document.getElementById("num1").value);
+            let no2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML="Result: "+ (no1/no2);
+        }
+		
+		
+    </script>
+</body>
+
+</html>
