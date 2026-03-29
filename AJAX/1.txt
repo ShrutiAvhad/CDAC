@@ -1,0 +1,12 @@
+install json-server library
+    npm install -g json-server
+    npm install json-server
+
+
+
+json-server --watch -p 8888 db.json
+
+* GET request: we can fetch data from server by using get method.
+* DELETE request: we can delete data frdom server.
+* POST request: we can add data to server database.
+* PUT request: we can update data from server.

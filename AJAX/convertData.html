@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+</head>
+<body>
+
+    <style>
+        /* js object data */
+        let emp = {id: 1, name: "Shruti", role:"CEO", salary:"979084", department:"IT"};
+
+        /* JSON.stringify(): convert obj type data into json  */
+        let jsonData = JSON.stringify(emp); 
+        document.write(jsonData);
+
+        /* JSON.parse(): convert json type data into js object */
+        let jsObjData = JSON.parse(jsonData);
+        document.write(jsObjData.name);
+    </style>
+    
+</body>
+</html>

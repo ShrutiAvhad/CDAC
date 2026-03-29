@@ -1,0 +1,28 @@
+* Modules in Node.js:
+    1. Core Module : module provided by nodejs to us.
+    2. Local Module : modude created by developer fro their use in project.
+    3. Third Party Module : module created and developed by third party vender. To use it, first we have to install it and then we can use it.
+    4. Comman Module : file.js, module.export, required
+    5. ES Module : file.mjs, export, import
+
+1. Core Module : 
+    os : it gives info abt oprating system
+    path : it returns info abt file or directory path.
+        _dirname : it gives current directory address
+        _filename : complete current file path
+
+2. Local Module :
+    Local modules are modules created locally in your nodejs application
+    -module.export
+    -require()
+
+Q. What is NPM ?
+Q. NPM command
+
+* Third party module 
+    -to use third party module first we 
+
+Q. What is an event ?
+Q. What is stream ?
+Q. How to read and write file ?
+

@@ -1,0 +1,54 @@
+{
+  "employee": [
+    {
+      "id": "1",
+      "ename": "Shruti",
+      "epost": "TL",
+      "salary": 95000
+    },
+    {
+      "id": "2",
+      "ename": "Vg",
+      "epost": "Tester",
+      "salary": 40000
+    },
+    {
+      "id": "3",
+      "ename": "Radha",
+      "epost": "HR",
+      "salary": 80000
+    },
+    {
+      "id": "5f4f",
+      "ename": "Aditya",
+      "epost": "AI Developer",
+      "salary": "980000"
+    },
+    {
+      "ename": "Ram",
+      "epost": "CEO",
+      "salary": "200000",
+      "id": "9e6a"
+    },
+    {
+      "ename": "Shruti Avhad",
+      "epost": "345",
+      "salary": "1234567890",
+      "id": "rSRUxpUo2d8"
+    }
+  ],
+  "users": [
+    {
+      "id": "101",
+      "uid": "king",
+      "upass": "king@123"
+    },
+    {
+      "id": "102",
+      "uid": "Queen",
+      "upass": "Queen@123"
+    },
+    
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
