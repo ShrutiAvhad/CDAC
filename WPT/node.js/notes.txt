@@ -26,3 +26,7 @@ Q. What is an event ?
 Q. What is stream ?
 Q. How to read and write file ?
 
+* How to create web server ?
+
+node_module: all external dependency and library will install here
+package.json: all externaldependency or library entry willfound here

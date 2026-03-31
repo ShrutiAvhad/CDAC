@@ -1,0 +1,41 @@
+
+React :
+    - it is javascript library
+    - it is used to create rich user interface
+    - it create SPA (single page application)
+    - react work on component concept
+    - FB developed and maintain React
+    - latest version of react is 19
+
+Technology requirement : 
+    -html,css,js(ES5,ES6,Oops)
+
+Software prerequisite
+    -nodejs,npm,CRA,IDE(VScode)
+
+How to create react project
+    1. By using NPX :
+        -no need to install configuration
+        Step 1 : npx create-react-app appname
+        Step 2 : cd appname
+        Step 3 : npm start
+
+    2. By using npm : 
+        -need to install configuration file
+        Step 1 : npm install -g create-react-app
+        Step 2 : create-react-app appname
+        Step 3 : cd appname
+        Step 4 : npm start
+
+    3. By using Vite : it create react project with minimumfile size
+
+
+
+Q. What is component in react ?
+    - it is a partial part of react app
+    - it can be any part of react project 
+    - we create it once and use multiple times
+
+In react there are 2 types of components : 1. Function component
+                                           2. Class component
+                                           
