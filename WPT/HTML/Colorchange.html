@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        table, td {
+            border: 1px black;
+            border-style: groove;
+            font-size: 70px;
+            margin: auto;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+    <label>Num 1️</label>
+    <input type="number" id="input1">
+    <label>Num 2</label>
+    <input type="number" id="input2">
+    </form>
+
+    <button type="button" onclick="Changeclr()">Changeclr</button>
+
+    <table>
+        <tbody>
+            <tr>
+                <td id="1">1</td>
+                <td id="2">2</td>
+                <td id="3">3</td>
+            </tr>
+            <tr>
+                <td id="4">4</td>
+                <td id="5">5</td>
+                <td id="6">6</td>
+            </tr>
+           
+        </tbody>
+    </table>
+
+    <script>
+
+        function Changeclr(){
+            let no1 = document.getElementById("input1").value;
+            let no2 = document.getElementById("input2").value;
+
+            
+                document.getElementById(no1).style.backgroundColor = "Red";
+                document.getElementById(no2).style.backgroundColor = "yellow";
+
+            
+            
+        }
+
+    </script>
+</body>
+</html>

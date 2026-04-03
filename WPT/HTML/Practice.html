@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            justify-content: center;
+            display: flex;
+
+        }
+        .container{
+            margin: auto;
+            margin-top: 10px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        textarea{
+            width: 200px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <textarea type="text" id="t1" ></textarea><br>
+
+        <label>Old Text</label><br>
+        <input type="text" id="oldt"><br>
+
+        <label>New Text</label><br>
+        <input type="text" id="newt"><br>
+
+        <button type="button" onclick="replace()">Replace</button>
+        <button type="button" onclick="replaceAll()">ReplaceAll</button>
+
+    </div>
+
+    <script>
+        function replace(){
+            const textArea = document.getElementById("t1");
+            const oldText = document.getElementById("oldt").value;
+            const newText = document.getElementById("newt").value;
+
+            const result = textArea.value.replace(oldText,newText);
+            textArea.value=result;
+        }
+
+
+        function replaceAll(){
+            const textArea = document.getElementById("t1");
+            const oldText = document.getElementById("oldt").value;
+            const newText = document.getElementById("newt").value;
+
+            const result = textArea.value.replaceAll(oldText,newText);
+            textArea.value = result;
+        }
+        
+    </script>
+
+
+    
+</body>
+</html>

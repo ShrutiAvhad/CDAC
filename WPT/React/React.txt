@@ -36,6 +36,55 @@ Q. What is component in react ?
     - it can be any part of react project 
     - we create it once and use multiple times
 
-In react there are 2 types of components : 1. Function component
-                                           2. Class component
-                                           
+In react only index.html is single html file
+In react root component name is app.js
+
+
+In react there are 2 types of components : 
+    -while creating component its file name starts with capital letter
+
+    1. Function component : when our main focus is on UI design in that case we use it 
+    2. Class component : when we have to write complex logic in that case we use it
+
+Q. How to get or display component output ?
+    -to display component output, first import it and then write component name as a tag.
+
+JSX(javascript XML) :
+    -JSX allows us to write html code in react component
+    -It makes react component code easy 
+    -In JSX to wrap multiple elements we need to use one parent element to wrap child element. parentelement should block element like(div,p,etc)
+
+Props : 
+    -It is parameter Functional parameter which is use to pass data inside component
+    -we can access props in function componentby writing this.props.keyname                            
+    -we can access props in Class componentby writing this.props.keyname                            
+
+Task 1: create one function component with name MyDetailComp and pass props fname,lname,gender,city,country and display its output
+Task 2: create one function component with name FriendDetailComp and pass props fname,lname,gender,city,country and display its output
+Task 3: create counter class to increment, decrement, reset counder by default
+
+State :
+    -State is use to handle essential data in class component
+    -It returns object type of data 
+    -To access data outside state we write this.state.keyname
+    -In class component we write state inside constructor
+    -from react version 16 we can use state in function component by using useState Hook
+
+setState :
+    -setState method allowsus to manipulate state data inside class component. This is inbuilt method provided by react library
+    -from react version 16 we can use state in function component by using useState Hook
+
+Q. How to write function of method in component and call
+
+Render : display component output on browser
+
+Conditional rendering : display component view on tha basis of Condition
+    1. if else = if condition is true then if block will execute otherwise else part 
+
+    2. element as variable = in this we store result in variable and displayinside an element
+
+    3. use of ternary operator = shorthand syntax for if else
+            syntax : (condition)? truepart : falsepart;
+
+    4. short-circuit(&&) = if the condition is true the only display component view
+
