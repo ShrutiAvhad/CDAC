@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class MathOperation {
+	private int X;
+	private int Y;
+	private int R;
+	
+	
+	public void init()
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter numbers : ");
+		X = s.nextInt();
+		Y = s.nextInt();
+	}
+	
+	public void add()
+	{
+		R = X + Y;
+		System.out.println("Addition is "+R);
+	}
+	
+	public void multiply()
+	{
+		R = X * Y;
+		System.out.println("Multiplication is "+R);
+	}
+	
+	public void power()
+	{
+		R = math.pow(X, Y);
+		System.out.println("Power is "+R);
+	}
+	
+	public void display()
+	{
+		System.out.println("Result ="+R);
+	}
+	
+	public static void main(String args[])
+	{
+		MathOperation m = new MathOperation();
+		m.init();
+		m.add();
+		m.multiply();
+		m.power();
+		m.display();
+	}
+	
+}

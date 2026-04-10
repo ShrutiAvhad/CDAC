@@ -1,0 +1,10 @@
+
+public class Player {
+	private String playerName;
+	private String playerCountry;
+	
+	public Player()
+	{
+		playerCountry = "India";
+	}
+}

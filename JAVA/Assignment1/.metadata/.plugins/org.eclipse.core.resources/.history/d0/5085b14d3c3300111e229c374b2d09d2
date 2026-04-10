@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class MathOperation {
+	private int X;
+	private int Y;
+	private int R;
+	
+	public void init()
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter numbers : ");
+		X = s.nextInt();
+		Y = s.nextInt();
+	}
+	
+	public void add()
+	{
+		R = X + Y;
+	}
+	
+	public void multiply()
+	{
+		R = X * Y;
+	}
+	
+	public void power()
+	{
+		R = X^Y;
+	}
+	
+	public void display()
+	{
+		MathOperation m = new MathOperation();
+		System.out.println("Result ="+R);
+	}
+}

@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class Multiply {
+	
+	public int mul(int a, int b)
+	{
+		int s = a * b;
+		System.out.println("Multiplication = "+s);
+		return s;
+	}
+	
+	public float mul(float a, float b, float c)
+	{
+		float s = a * b* c;
+		System.out.println("Multiplication = "+(a*b*c));
+		return s;
+	}
+	
+	public int mul(int... a)
+	{
+		int s = 1;
+		System.out.println("Length = "+a.length);	
+		
+//		for(int i=0; i<a.length; i++)
+//		{
+//			sum += a[i];
+//		}
+		
+		for(int i:a)
+		{
+			s *= i;
+		}
+		return s;
+	}
+	
+	public double mul(double a, int b)
+	{
+		double s = a * b;
+		System.out.println("Multiplication = "+(a+b));
+		return s;
+	}
+	
+	public static void main(String [] args)
+	{
+		Multiply m = new Multiply();
+		m.multiply(10,20);
+		m.multiply(102f,20.2f,30.2f);
+		m.multiply(10,20);
+
+	}
+	
+}

@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class MathOperation {
+	private int X;
+	private int Y;
+	private int R;
+	
+	public void init()
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter numbers : ");
+		X = s.nextInt();
+		Y = s.nextInt();
+	}
+	
+	
+}

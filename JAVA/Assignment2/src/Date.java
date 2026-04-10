@@ -1,0 +1,55 @@
+
+public class Date {
+	private int Day;
+	private int Month;
+	private int Year;
+	
+	
+	//Setter = Accessor
+	
+	public void setDay(int d)
+	{
+		Day = d;
+	}
+	
+	public void setMonth(int m)
+	{
+		Month = m;
+	}
+	
+	public void setYear(int y)
+	{
+		Year = y;
+	}
+	
+	//Getter = Mutator
+	
+	public int getDay()
+	{
+		return Day;
+	}
+	
+	public int getMonth()
+	{
+		return Month;
+	}
+	
+	public int getYear()
+	{
+		return Year;
+	}
+	
+	public static void main(String args[])
+	{
+		Date d = new Date();
+		
+		d.setDay(8);
+		d.setMonth(4);
+		d.setYear(2026);
+		
+		System.out.println("Date = "+d.getDay()+ "/" +d.getMonth()+ "/" +d.getYear());
+		
+		//System.out.println("Day is "+day);
+		
+	}
+}

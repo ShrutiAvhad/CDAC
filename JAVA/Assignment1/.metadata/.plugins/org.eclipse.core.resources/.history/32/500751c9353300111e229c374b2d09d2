@@ -1,0 +1,28 @@
+import java.util.*;
+public class Area {
+	
+	private int r;
+	private double a;
+	
+	public void initRadius()
+	{
+		Scanner s = new Scanner(System.in);
+		
+		r = s.nextInt();
+	}
+	
+	public void calcArea()
+	{
+		a = 3.14 * r * r;
+	}
+	
+	public void displayArea()
+	{
+		
+	}
+	
+	public static void main(String args[])
+	{
+		
+	}
+}

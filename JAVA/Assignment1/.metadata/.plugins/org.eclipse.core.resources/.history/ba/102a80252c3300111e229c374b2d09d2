@@ -1,0 +1,28 @@
+
+public class Date {
+	private int day;
+	private int month;
+	private int year;
+	
+	public void setDate(int d)
+	{
+		day = d;
+		month = m;
+		year = y;
+	}
+	
+	public int getDate()
+	{
+		return day;
+	}
+	
+	public static void main(String args[])
+	{
+		Date d = new Date();
+		d.setDate(8);
+		System.out.println("Day = "+d.getDate());
+		
+		//System.out.println("Day is "+day);
+		
+	}
+}
