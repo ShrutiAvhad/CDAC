@@ -10,15 +10,7 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public int getPid() {
-        return pid;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
+    public int getPid() { return pid; }
+    public int getPrice() { return price; }
+    public int getQuantity() { return quantity; }
 }
