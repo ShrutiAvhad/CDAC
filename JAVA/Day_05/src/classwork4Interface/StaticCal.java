@@ -1,0 +1,5 @@
+package classwork4Interface;
+
+public interface StaticCal extends ArithCal, CompareCal {
+	public void avg(int a, int b);
+}
