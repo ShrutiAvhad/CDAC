@@ -18,7 +18,7 @@ package classwork;
  * @author Shruti
  * @version 1.0
  */
-public class Emp implements Comparable<Emp> {
+public class EmpDoc implements Comparable<EmpDoc> {
 
     /**
      * Unique identifier for each employee.
@@ -39,7 +39,7 @@ public class Emp implements Comparable<Emp> {
      * Default constructor.
      * Initializes an empty Emp object.
      */
-    public Emp() {}
+    public EmpDoc() {}
 
     /**
      * Parameterized constructor to initialize employee details.
@@ -48,7 +48,7 @@ public class Emp implements Comparable<Emp> {
      * @param empName name of the employee
      * @param empSal  salary of the employee
      */
-    public Emp(int empId, String empName, float empSal) {
+    public EmpDoc(int empId, String empName, float empSal) {
         this.empId = empId;
         this.empName = empName;
         this.empSal = empSal;
@@ -136,7 +136,7 @@ public class Emp implements Comparable<Emp> {
      *         is less than, equal to, or greater than the specified object
      */
     @Override
-    public int compareTo(Emp e) {
+    public int compareTo(EmpDoc e) {
         if (this.empId > e.empId)
             return 1;
         else if (this.empId < e.empId)

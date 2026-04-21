@@ -2,10 +2,10 @@ package classwork;
 
 import java.util.Comparator;
 
-public class MyComparator implements Comparator<Emp> {
+public class MyComparator implements Comparator<EmpDoc> {
 	
 	@Override
-	public int compare(Emp e1, Emp e2) {
+	public int compare(EmpDoc e1, EmpDoc e2) {
 		
 		if(e1.getEmpId() < e2.getEmpId())
 			return +1;

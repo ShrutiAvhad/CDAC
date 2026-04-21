@@ -6,16 +6,16 @@ import java.util.TreeSet;
 
 public class Test {
 	public static void main(String[] args) {
-		Emp e1 = new Emp(222, " Shruti", 98765.65f);
-		Emp e2 = new Emp(111, " Shivani", 49856.65f);
-		Emp e3 = new Emp(333, " Shravni", 9754.65f);
-		Emp e4 = new Emp(666, " Aditya", 76543.65f);
-		Emp e5 = new Emp(555, " Yash", 76540.65f);
+		EmpDoc e1 = new EmpDoc(222, " Shruti", 98765.65f);
+		EmpDoc e2 = new EmpDoc(111, " Shivani", 49856.65f);
+		EmpDoc e3 = new EmpDoc(333, " Shravni", 9754.65f);
+		EmpDoc e4 = new EmpDoc(666, " Aditya", 76543.65f);
+		EmpDoc e5 = new EmpDoc(555, " Yash", 76540.65f);
 
 	
 	//TreeSet<Emp> t = new TreeSet<Emp>(new MyComparator());
 	//TreeSet<Emp> t = new TreeSet<Emp>();
-	ArrayList <Emp> t = new ArrayList<Emp>();
+	ArrayList <EmpDoc> t = new ArrayList<EmpDoc>();
 	
 	t.add(e1);
 	t.add(e2);
