@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-class circularQueue {
+class Que  {
 
 	private int arr[];
 	private int front, rear;
 
-	public circularQueue() {
+	public Que() {
 		arr = new int[10];
 		front = rear = -1;
 	}
 
-	public circularQueue(int s) {
+	public Que(int s) {
 		arr = new int[s];
 		front = rear = -1;
 	}
@@ -82,11 +82,11 @@ class circularQueue {
 		}
 	}
 
-	 class Que {
+	 class circularQueue {
 		public static void main(String[] args) {
 
 			Scanner s = new Scanner(System.in);
-			circularQueue c = new circularQueue(4);
+			Que c =		new Que(4);
 
 			int ch;
 			int n;
@@ -141,6 +141,7 @@ class circularQueue {
 				}
 
 			} while (ch != 4);
+			s.close();
 		}
 
 	}
