@@ -1,4 +1,3 @@
-import java.util.LinkedList;
 import java.util.Scanner;
 
 class intNode{
@@ -12,11 +11,12 @@ class intNode{
 	
 	public int getData() {
 		return data;
-	}
+	} 
 	
 	public void setData(int d) {
 		data = d;
-	}
+	} 
+	
 	
 	public intNode getNext() {
 		return next;
@@ -110,7 +110,6 @@ class LinkedListm {
 		for(int i = 1; i<pos-1 && iter.getNext() != null; i++)
 		{
 			iter = iter.getNext();
-			return;
 		}
 		
 		new_node.setNext(iter.getNext());
@@ -119,7 +118,7 @@ class LinkedListm {
 	
 	public int delete_byPos(int pos)
 	{
-		intNode deletable = null;
+		
 		int d = -999;
 		
 		if(head == null)
@@ -134,33 +133,32 @@ class LinkedListm {
 		
 		intNode iter = head;
 		
-		for(int i = 1; i<pos-1 && iter.getNext() != null; iter = iter.getNext(),i++)
+		for(int i = 1; i<pos-1 && iter.getNext() != null;i++)
 		{
-			deletable = iter.getNext();	
+			iter = iter.getNext();	
 		}
 		
-			if(iter.getNext() != null)
-			{
-				iter.setNext(deletable.getNext());
-				d = deletable.getData();
-				deletable.setNext(null);
-				return d;
-			}
-			else
-			{
-				System.out.println("Position Invalid..");
-				return -999;
-			}		
+		 if(iter.getNext() != null)
+		    {
+		        intNode deletable = iter.getNext();
+		        iter.setNext(deletable.getNext());
+		        return deletable.getData();
+		    }
+		    else
+		    {
+		        System.out.println("Invalid position");
+		        return d;
+		    }	
 	}
 	
 	public int deleteLast()
 	{
-		intNode deletable = null;
+		intNode deletable;
 		int d = -999;
 		
 		if(head == null)
 		{
-			return -999;
+			return d;
 		}
 		
 		intNode iter = head;
@@ -240,20 +238,26 @@ class LinkedListm {
 		
 		while(iter != null)
 		{
-			System.out.println(iter.getData() +"->");
+			System.out.print(iter.getData() +"->");
 			if(iter.getNext() == null)
-			{
+			
 				break;
-			}
-			else
-			{
-				iter.getNext().getNext();
-			}
+			
+			
+			
+				iter = iter.getNext().getNext();
 		}
+		System.out.print("null");
 	}
 	
 	public int findMiddle()
 	{
+		if(head == null)
+		{
+			System.out.println("List is Empty..");
+			return -999;
+		}
+		
 		intNode slow, fast;
 		slow = fast = head;
 		while(fast != null && fast.getNext() != null)
@@ -263,7 +267,7 @@ class LinkedListm {
 		}
 		return slow.getData();
 	}
-	
+
 	public void ReverseNodes()
 	{
 		intNode prev = null;
@@ -294,6 +298,7 @@ class LinkedListm {
 	}
 	
 }
+
 	public class MyLinkedListMenu {
 	    public static void main(String[] args) {
 	     
@@ -307,16 +312,17 @@ class LinkedListm {
 	            System.out.println("1. Insert First");
 	            System.out.println("2. Insert Last");
 	            System.out.println("3. Display");
-	            System.out.println("4. deleteFirst");
+	            System.out.println("4. Delete First");
 	            System.out.println("5. insert_byPos");
 	            System.out.println("6. delete_byPos");
-	            System.out.println("7. deletelast");
-	            System.out.println("8. insertBefore");
-	            System.out.println("9. insertSorted");
+	            System.out.println("7. Delete Last");
+	            System.out.println("8. Insert Before");
+	            System.out.println("9. Insert Sorted");
 	            System.out.println("10. Alternate nodes");	
 	            System.out.println("11. Find Middle");	
 	            System.out.println("12. Reverse");	            
-	            System.out.println("13. Exit");	            
+	            System.out.println("13. Count");
+	            System.out.println("14. Exit");
 
 	            System.out.print("Enter choice: ");
 	            choice = s.nextInt();
@@ -363,7 +369,8 @@ class LinkedListm {
 	                    break;
 	                 
 	                case 7:
-	                	l.deleteLast();
+	                	System.out.println(l.deleteLast());	                	
+	                	break;
 	                	
 	                case 8: 
 	                	System.out.println("Enter value : ");
@@ -373,23 +380,30 @@ class LinkedListm {
 	                	pos = s.nextInt();
 	                	
 	                	l.insertBefore(n, pos);
+	                	break;
 	                	
 	                case 9:
 	                	System.out.println("Enter value : ");
 	                	n = s.nextInt();
 	                	l.insertSorted(n);
+	                	break;
 	                	
 	                case 10:
 	                	l.AlternateNodes();
+	                	break;
 	                	
 	                case 11:
-	                	l.findMiddle();
+	                	System.out.println(l.findMiddle());
+	                	break;
 	                	
 	                case 12:
 	                	l.ReverseNodes();
+	                	l.display();
+	                	break;
 	                	
 	                case 13:
-	                	l.Cnt();
+	                	System.out.println(l.Cnt());
+	                	break;
 	                	
 	                case 14: 
 	                	System.out.println("EXIT");
@@ -400,7 +414,7 @@ class LinkedListm {
 	                    System.out.println("Invalid choice!");
 	            }
 	
-	        } while (choice != 12);
+	        } while (choice != 14);
 	
 	        s.close();
 	    }
@@ -411,9 +425,7 @@ class LinkedListm {
 
 
 
-
-
-
+	
 
 
 
