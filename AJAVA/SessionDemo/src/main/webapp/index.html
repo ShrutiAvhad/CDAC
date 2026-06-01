@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+
+<script type="text/javascript" src="resources/app.js"></script>
+<link rel="stylesheet" href="resources/style.css">
+
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+<hr>
+
+<form action="/loginServlet" method="get" name="regForm" onsubmit="return Validate()">
+
+<table border="1">
+
+<tr>
+<td>Enter FirstName :</td>
+<td><input type="text" name="txtFirstname"></td>
+</tr>
+
+<tr>
+<td>Enter Password :</td>
+<td><input type="password" name="password"></td>
+</tr>
+
+<tr>
+<td>
+<input type="button" value="Login"
+onclick="location.href='login.html'">
+</td>
+
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>

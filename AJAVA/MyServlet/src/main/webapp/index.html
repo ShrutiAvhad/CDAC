@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Search Engines</title>
+
+<script type="text/javascript" src="resources/app.js"></script>
+<link rel="stylesheet" href="resources/style.css">
+
+</head>
+
+<body>
+
+	<h2>Search</h2>
+	<hr>
+
+	<form action="serv1" method="get" name="regForm">
+
+		<table border="1" cellpadding="10">
+
+			<tr>
+				<td>Enter Data :</td>
+				<td>
+					<input type="text" name="txtData">
+				</td>
+			</tr>
+
+			<tr>
+				<td>Select Search Engine :</td>
+
+				<td>
+					<input type="radio" name="engine" value="google">
+					Google
+				</td>
+
+				<td>
+					<input type="radio" name="engine" value="yahoo">
+					Yahoo
+				</td>
+
+				<td>
+					<input type="radio" name="engine" value="bing">
+					Bing
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="4" align="center">
+					<input type="submit" value="Search">
+
+					<input type="reset" value="Clear">
+				</td>
+			</tr>
+
+		</table>
+
+	</form>
+
+</body>
+
+</html>
