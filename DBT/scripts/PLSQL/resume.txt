@@ -1,0 +1,108 @@
+PMS LOGIN PAGE
+
+Login URL :
+User ID / PRN :
+Password :
+
+CHANGE PASSWORD
+
+Old Password :
+New Password : Shruti@24
+Confirm Password :
+
+FORGOT PASSWORD
+
+PRN :
+Registered Email ID :
+OTP :
+New Password :
+Confirm Password :
+
+PERSONAL DETAILS
+
+Full Name :  Shruti Sanjay Avhad                 
+PRN: 
+Primary Email ID : shrutiavhad30@gmail.com
+Secondary Email ID : shrutiavhad10gmail.com
+Skype ID :
+Mobile Number : 9503355518
+Alternate Mobile Number : 9881491055
+DOB : 24/10/2001
+Address: Rajlaxmi, Shivaji nagar, sinnar, nashik
+Country : India
+City: Sinnar
+State: Maharashtra
+STD code:
+Pincode : 422103
+Telephone no :
+Nationality: India
+Gender: Female
+
+ACADEMIC DETAILS (10th)
+
+School Name : Loknete Shankarrao Balaji Vaje Vidyalaya
+Board : SSC
+Specialization : General
+Obtained Marks : 437
+Total Marks : 500
+Percentage : 87.40
+Grade : A
+Year of Passing : 2017
+
+ACADEMIC DETAILS (12th)
+
+College Name : Shriram Raojisa Yamasa Kshatriya College of science
+Board : HSC
+Specialization : general
+Obtained Marks : 383
+Total Marks : 650
+Percentage : 58.92
+Grade : B 
+Year of Passing : 2019
+
+DIPLOMA / GRADUATION DETAILS
+
+Qualification Level : GRADUATION
+Degree Name : BE
+College Name : Sir Visvesvaraya Institute of Technology,Nashik
+University : SavitriBai phule pune university
+Backlogs :  3
+No. of Attempts : 1
+Year of Admission : 2019
+Year of Passing : 2023
+Degree Percentage : 
+Average Aggregate Percentage :
+
+PROJECT DETAILS
+
+Qualification : 
+Project Title :
+Project Duration :
+Platform Used :
+Git Repository :
+Project Description :
+
+WORK EXPERIENCE
+
+Company Name : BasketHunt
+Designation : 
+Duration :
+Experience Details :
+
+OTHER INFORMATION
+
+Religion :
+Languages :
+Caste :
+Aadhar Card Number : 
+PAN Card Number :
+Passport Number :
+Technical Certifications : C, C++
+Training Acquired :
+Preferred Job Profiles : IT 
+
+PREVIEW RESUME
+
+Personal Summary :
+Academic Summary :
+Professional Summary :

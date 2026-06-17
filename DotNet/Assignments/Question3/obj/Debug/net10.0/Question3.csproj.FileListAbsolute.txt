@@ -1,0 +1,15 @@
+F:\CDAC\DotNet\Assignments\Question3\bin\Debug\net10.0\Question3.exe
+F:\CDAC\DotNet\Assignments\Question3\bin\Debug\net10.0\Question3.deps.json
+F:\CDAC\DotNet\Assignments\Question3\bin\Debug\net10.0\Question3.runtimeconfig.json
+F:\CDAC\DotNet\Assignments\Question3\bin\Debug\net10.0\Question3.dll
+F:\CDAC\DotNet\Assignments\Question3\bin\Debug\net10.0\Question3.pdb
+F:\CDAC\DotNet\Assignments\Question3\obj\Debug\net10.0\Question3.GeneratedMSBuildEditorConfig.editorconfig
+F:\CDAC\DotNet\Assignments\Question3\obj\Debug\net10.0\Question3.AssemblyInfoInputs.cache
+F:\CDAC\DotNet\Assignments\Question3\obj\Debug\net10.0\Question3.AssemblyInfo.cs
+F:\CDAC\DotNet\Assignments\Question3\obj\Debug\net10.0\Question3.csproj.CoreCompileInputs.cache
+F:\CDAC\DotNet\Assignments\Question3\obj\Debug\net10.0\Question3.sourcelink.json
+F:\CDAC\DotNet\Assignments\Question3\obj\Debug\net10.0\Question3.dll
+F:\CDAC\DotNet\Assignments\Question3\obj\Debug\net10.0\refint\Question3.dll
+F:\CDAC\DotNet\Assignments\Question3\obj\Debug\net10.0\Question3.pdb
+F:\CDAC\DotNet\Assignments\Question3\obj\Debug\net10.0\Question3.genruntimeconfig.cache
+F:\CDAC\DotNet\Assignments\Question3\obj\Debug\net10.0\ref\Question3.dll

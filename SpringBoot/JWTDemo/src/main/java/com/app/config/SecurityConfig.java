@@ -29,52 +29,51 @@ public class SecurityConfig {
 
 	private final JwtDemoApplication jwtDemoApplication;
 
-
 	SecurityConfig(JwtDemoApplication jwtDemoApplication) {
 		this.jwtDemoApplication = jwtDemoApplication;
 	}
 
 	@Bean
-	SecurityFilterChain securityFilterChain(HttpSecurity http)
-	{
+	SecurityFilterChain securityFilterChain(HttpSecurity http) {
 		http.csrf(customizer -> customizer.disable());
-		//http.authorizeHttpRequests(request -> request.anyRequest().authenticated());
-		http.authorizeHttpRequests(request -> request.requestMatchers("/register","/login").permitAll().anyRequest().authenticated());
-		//http.formLogin(Customizer.withDefaults());
+		// http.authorizeHttpRequests(request -> request.anyRequest().authenticated());
+		http.authorizeHttpRequests(
+				request -> request.requestMatchers("/register", "/login").permitAll().anyRequest().authenticated());
+		// http.formLogin(Customizer.withDefaults());
 		http.httpBasic(Customizer.withDefaults());
-		http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)).addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
+		http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+				.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 		return http.build();
 	}
-	
+
 	@Bean
-	UserDetailsService userDetailsService()
-	{
-		UserDetails user1 = User.withDefaultPasswordEncoder().username("Shruti").password("test123").roles("USER","MANAGER").build();
-		UserDetails user2 = User.withDefaultPasswordEncoder().username("Aditya").password("test123").roles("USER").build();
-		
+	UserDetailsService userDetailsService() {
+		UserDetails user1 = User.withDefaultPasswordEncoder().username("Shruti").password("test123")
+				.roles("USER", "MANAGER").build();
+		UserDetails user2 = User.withDefaultPasswordEncoder().username("Aditya").password("test123").roles("USER")
+				.build();
+
 		return new InMemoryUserDetailsManager(user1, user2);
 	}
-	
+
 	@Bean
-	AuthenticationProvider authenticationProvider()
-	{
+	AuthenticationProvider authenticationProvider() {
 		DaoAuthenticationProvider provider = new DaoAuthenticationProvider(userDetailsService);
-		//provider.setPasswordEncoder(NoOpPasswordEncoder.getInstance());
+		// provider.setPasswordEncoder(NoOpPasswordEncoder.getInstance());
 		provider.setPasswordEncoder(new BCryptPasswordEncoder(10));
-		System.out.println("Provider : "+provider);
+		System.out.println("Provider : " + provider);
 		return provider;
 	}
-	
+
 	@Autowired
 	UserDetailsService userDetailsService;
-	
+
 	@Bean
-	AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception
-	{
+	AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
 		return config.getAuthenticationManager();
 	}
-	
+
 	@Autowired
 	private JwtFilter jwtFilter;
-	
+
 }

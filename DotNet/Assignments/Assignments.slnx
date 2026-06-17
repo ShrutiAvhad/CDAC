@@ -1,0 +1,12 @@
+<Solution>
+  <Project Path="Question10/Question10.csproj" Id="586ce1a6-a86a-4244-a92a-cfad943dbac5" />
+  <Project Path="Question11/Question11.csproj" Id="4d09f19b-59de-4c18-9a20-92f5be4a5ccd" />
+  <Project Path="Question12/Question12.csproj" Id="b2a78544-5106-485d-9273-2550aa6f493b" />
+  <Project Path="Question3/Question3.csproj" Id="227b055b-a148-4935-969d-7b2bb9b9e83a" />
+  <Project Path="Question4/Question4.csproj" Id="a4be35d7-06e9-4aa8-b22c-2ff9dee4c451" />
+  <Project Path="Question5/Question5.csproj" Id="c0dcb3f7-ef07-41f9-a7c9-b7c231f00081" />
+  <Project Path="Question6/Question6.csproj" Id="26079333-2062-4e9b-8af4-d92390a6568b" />
+  <Project Path="Question7/Question7.csproj" Id="e3d891ff-9f66-4a4c-89e9-d12e6123492c" />
+  <Project Path="Question8/Question8.csproj" Id="76a216c2-da99-4892-bf3b-26562b8f1611" />
+  <Project Path="Question9/Question9.csproj" Id="99d732f5-eb16-4673-becd-1b957c84aaed" />
+</Solution>

@@ -53,6 +53,7 @@ this.usersDetailsService = usersDetailsService;
         	UserDetails userDetails =
         	        usersDetailsService.loadUserByUsername(userName);
         	System.out.println("UserDetails = "+userDetails);
+        	
             if(jwtService.validateToken(token, userDetails)){
                 UsernamePasswordAuthenticationToken authToken =
                         new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());

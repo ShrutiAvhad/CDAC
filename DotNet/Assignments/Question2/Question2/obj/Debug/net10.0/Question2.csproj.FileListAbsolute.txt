@@ -1,0 +1,15 @@
+F:\CDAC\DotNet\Question2\Question2\obj\Debug\net10.0\Question2.GeneratedMSBuildEditorConfig.editorconfig
+F:\CDAC\DotNet\Question2\Question2\obj\Debug\net10.0\Question2.AssemblyInfoInputs.cache
+F:\CDAC\DotNet\Question2\Question2\obj\Debug\net10.0\Question2.AssemblyInfo.cs
+F:\CDAC\DotNet\Question2\Question2\obj\Debug\net10.0\Question2.csproj.CoreCompileInputs.cache
+F:\CDAC\DotNet\Question2\Question2\obj\Debug\net10.0\Question2.sourcelink.json
+F:\CDAC\DotNet\Question2\Question2\bin\Debug\net10.0\Question2.exe
+F:\CDAC\DotNet\Question2\Question2\bin\Debug\net10.0\Question2.deps.json
+F:\CDAC\DotNet\Question2\Question2\bin\Debug\net10.0\Question2.runtimeconfig.json
+F:\CDAC\DotNet\Question2\Question2\bin\Debug\net10.0\Question2.dll
+F:\CDAC\DotNet\Question2\Question2\bin\Debug\net10.0\Question2.pdb
+F:\CDAC\DotNet\Question2\Question2\obj\Debug\net10.0\Question2.dll
+F:\CDAC\DotNet\Question2\Question2\obj\Debug\net10.0\refint\Question2.dll
+F:\CDAC\DotNet\Question2\Question2\obj\Debug\net10.0\Question2.pdb
+F:\CDAC\DotNet\Question2\Question2\obj\Debug\net10.0\Question2.genruntimeconfig.cache
+F:\CDAC\DotNet\Question2\Question2\obj\Debug\net10.0\ref\Question2.dll
